@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+#ui {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#ui .text {
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  line-height: 40px;
+  font-family: 'Anton', sans-serif;
+  padding-top: 125px;
+  mix-blend-mode: screen;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#ui .text:nth-child(1) {
+  -webkit-clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
+          clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0% 100%);
+  -webkit-animation: wave 2000ms -10000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -10000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(2) {
+  -webkit-clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
+          clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
+  -webkit-animation: wave 2000ms -9800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -9800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(3) {
+  -webkit-clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
+          clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
+  -webkit-animation: wave 2000ms -9600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -9600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(4) {
+  -webkit-clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
+          clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
+  -webkit-animation: wave 2000ms -9400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -9400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(5) {
+  -webkit-clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
+          clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
+  -webkit-animation: wave 2000ms -9200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -9200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(6) {
+  -webkit-clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
+          clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
+  -webkit-animation: wave 2000ms -9000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -9000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(7) {
+  -webkit-clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
+          clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
+  -webkit-animation: wave 2000ms -8800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -8800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(8) {
+  -webkit-clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
+          clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
+  -webkit-animation: wave 2000ms -8600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -8600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(9) {
+  -webkit-clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
+          clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
+  -webkit-animation: wave 2000ms -8400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -8400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(10) {
+  -webkit-clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
+          clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
+  -webkit-animation: wave 2000ms -8200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -8200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(11) {
+  -webkit-clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
+          clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
+  -webkit-animation: wave 2000ms -8000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -8000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(12) {
+  -webkit-clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
+          clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
+  -webkit-animation: wave 2000ms -7800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -7800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(13) {
+  -webkit-clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
+          clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
+  -webkit-animation: wave 2000ms -7600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -7600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(14) {
+  -webkit-clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
+          clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
+  -webkit-animation: wave 2000ms -7400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -7400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(15) {
+  -webkit-clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
+          clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
+  -webkit-animation: wave 2000ms -7200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -7200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(16) {
+  -webkit-clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
+          clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
+  -webkit-animation: wave 2000ms -7000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -7000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(17) {
+  -webkit-clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
+          clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
+  -webkit-animation: wave 2000ms -6800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -6800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(18) {
+  -webkit-clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
+          clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
+  -webkit-animation: wave 2000ms -6600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -6600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(19) {
+  -webkit-clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
+          clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
+  -webkit-animation: wave 2000ms -6400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -6400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(20) {
+  -webkit-clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
+          clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
+  -webkit-animation: wave 2000ms -6200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -6200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(21) {
+  -webkit-clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
+          clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
+  -webkit-animation: wave 2000ms -6000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -6000ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(22) {
+  -webkit-clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
+          clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
+  -webkit-animation: wave 2000ms -5800ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5800ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(23) {
+  -webkit-clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
+          clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
+  -webkit-animation: wave 2000ms -5600ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5600ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(24) {
+  -webkit-clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
+          clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
+  -webkit-animation: wave 2000ms -5400ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5400ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(25) {
+  -webkit-clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
+          clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
+  -webkit-animation: wave 2000ms -5200ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5200ms ease-in-out infinite alternate;
+}
+
+#ui .text:nth-child(26) {
+  -webkit-clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
+          clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
+  -webkit-animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+          animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+            transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+    color: #001e64;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    color: #32e6ff;
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+            transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+    color: #001e64;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    color: #32e6ff;
+  }
+}
+
+.logo {
+  padding-left: 180px;
+}
+
+.header-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  font: 1em 'Cantora One', sans-serif;
+  position: relative;
+}
+
+.header-box {
+  position: relative;
+}
+
+.main-nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-top: 60px;
+  padding-left: 150px;
+  list-style-type: none;
+}
+
+.main-nav > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+}
+
+.main-nav > ul > li > a:hover {
+  border-bottom: 1px solid white;
+  border-top: 1px solid #2c38d8;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.main-nav > ul > li {
+  display: list-item;
+  padding-left: 1.5rem;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.container-boxImage {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  font: 1em 'Cantora One', sans-serif;
+  position: relative;
+}
+
+.box-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
+  width: 55%;
+  border-radius: 70%;
+  background-image: url("/img/profil.png");
+  background-repeat: no-repeat;
+}
+
+.box-text {
+  height: 400px;
+  padding-right: 100px;
+  width: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.anfangAnimation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 981px;
+}
+
+.boxText-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.boxText-1 h1 {
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 75px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+          animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#boxText-2 {
+  padding-top: 115px;
+  margin: 0;
+  opacity: 0.9;
+  position: fixed;
+}
+
+#boxText-3 {
+  padding-bottom: 100px;
+  margin: 0;
+  opacity: 0.9;
+  position: fixed;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.content-text2 {
+  -webkit-animation: buchstabeWachsen 5s;
+          animation: buchstabeWachsen 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
+  width: 100%;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.content-text3 {
+  -webkit-animation: buchstabeWachsen 3s;
+          animation: buchstabeWachsen 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 20px;
+  width: 100%;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+}
+
+@-webkit-keyframes buchstabeWachsen {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.3;
+  }
+  85% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes buchstabeWachsen {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.3;
+  }
+  85% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.text-shadow {
+  color: #f4f4f4;
+  text-shadow: 1px 1px white, px px gray, 1px 1px #7a7a7a, 1px 1px #757575, 1px 1px #707070, 1px 1px #6b6b6b, 1px 1px #666666, 1px 1px #616161, 1px 1px #5c5c5c, 1px 1px #575757, 1px 1px #525252, 1px 1px #4d4d4d, 4px 8px 10px rgba(0, 0, 0, 0.2), 4px 8px 10px rgba(0, 0, 0, 0.2), 4px 9px 50px rgba(0, 0, 255, 0.5);
+}
+
+#home {
+  position: relative;
+}
+
+#backgroundNachOben {
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 981px;
+  position: absolute;
+  -webkit-animation-name: divNachOben;
+          animation-name: divNachOben;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes divNachOben {
+  0% {
+    position: absolute;
+    bottom: -100%;
+  }
+  100% {
+    position: absolute;
+    bottom: 100%;
+  }
+}
+
+@keyframes divNachOben {
+  0% {
+    position: absolute;
+    bottom: -100%;
+  }
+  100% {
+    position: absolute;
+    bottom: 100%;
+  }
+}
+
+.homeText-1 {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.801);
+  font-family: 'Rammetto One', cursive;
+  font-size: 28px;
+  -webkit-animation: satzSchwinden 7s;
+          animation: satzSchwinden 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.homeText {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.904);
+  font-family: 'Rammetto One', cursive;
+  font-size: 25px;
+  text-align: justify;
+  -webkit-animation: satzSchwinden2 10s;
+          animation: satzSchwinden2 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes satzSchwinden {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes satzSchwinden {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes satzSchwinden2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes satzSchwinden2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

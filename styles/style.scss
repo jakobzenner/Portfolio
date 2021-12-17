@@ -1,0 +1,378 @@
+// Please change your favorite font-size!
+$fontSize: 40px;
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+
+} 
+
+#ui {
+  transform-style: preserve-3d;
+  .text {
+    position: absolute;
+    font-size: $fontSize;
+    color: #fff;
+    line-height: $fontSize;
+    font-family: 'Anton', sans-serif;
+    padding-top: 125px;
+    mix-blend-mode: screen;
+    transform-style: preserve-3d;
+    @for $i from 1 through 26 {
+      $key: $i - 1;
+      $param: 5;
+      &:nth-child(#{$i}) {
+        clip-path: polygon(
+          -30% + ($key * $param) 0,
+          -20% + ($key * $param) 0,
+          20% + ($key * $param) 100%,
+          0% + ($key * $param) 100%
+        );
+        animation: wave 2000ms $key * 200 - 10000ms ease-in-out infinite alternate;
+      }
+    }
+  }
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg) rotateZ(0deg);
+    color: rgba(0, 30, 100, 1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    color: rgba(50, 230, 255, 1);
+  }
+}
+
+.logo {
+    padding-left: 180px;
+
+}
+
+
+.header-container {
+    width: 100%;
+    display: flex;
+    height: 80px;
+    font: 1em 'Cantora One', sans-serif;
+    position: relative;
+
+}
+
+.header-box {
+    position: relative;
+}
+
+.main-nav > ul{
+    display: flex;
+    height: 100%;
+    margin-top: 60px;
+    padding-left: 150px;
+    list-style-type: none;
+
+}
+
+.main-nav > ul > li > a {
+ text-decoration: none;
+ color: #fff;
+ padding: 12px;
+
+
+}
+
+.main-nav > ul > li > a:hover {
+      border-bottom:1px solid white;
+      border-top: 1px solid rgb(44, 56, 216);
+      border-radius: 1rem;
+      text-align: center;
+   
+   }
+
+
+.main-nav > ul > li {
+    display: list-item;
+    padding-left: 1.5rem;
+    font-family: 'Cantarell', sans-serif;    
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.container-boxImage {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  flex-flow: column;
+  font: 1em 'Cantora One', sans-serif;
+  position: relative;
+
+}
+
+.box-image {
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    height: 700px;
+    clip-path: circle(75%);
+    transition: clip-path 1s;
+    width: 55%;
+    border-radius: 70%;
+    background-image: url('/img/profil.png');
+    background-repeat: no-repeat;
+
+}
+
+.box-text {
+    height: 400px;
+    padding-right: 100px;
+    width: 50%;
+  
+  
+  }
+
+.hide {
+    display: none;
+
+}
+
+.show {
+    display: block;
+
+}
+
+.anfangAnimation {
+    display:flex;
+    justify-content: center;
+    height: 981px;
+
+ }
+
+.boxText-1 {
+    align-self: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.boxText-1 h1 {
+    color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 75px;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#boxText-2 {
+    padding-top: 115px;
+    margin: 0;
+    opacity: 0.9;
+    position: fixed;
+
+}
+
+#boxText-3 {
+    padding-bottom: 100px;
+    margin: 0;
+    opacity: 0.9;
+    position: fixed;
+    align-self: center;
+
+}
+
+.content-text2 {
+    animation: buchstabeWachsen 5s;
+    animation-fill-mode: forwards;
+    color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    width: 100%;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    font-size: 25px;
+
+}
+
+.content-text3 {
+    animation: buchstabeWachsen 3s;
+    animation-fill-mode: forwards;
+    color: white;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+
+}
+
+
+@keyframes buchstabeWachsen {
+
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    85% {
+        transform: scale(3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+}
+
+
+
+.text-shadow {
+    color: #f4f4f4;
+   text-shadow:
+   -1px -1px white,
+   1px 1px darken(white, 50%),
+   1px 1px darken(white, 52%),
+   1px 1px darken(white, 54%),
+   1px 1px darken(white, 56%),
+   1px 1px darken(white, 58%),
+   1px 1px darken(white, 60%),
+   1px 1px darken(white, 62%),
+   1px 1px darken(white, 64%),
+   1px 1px darken(white, 66%),
+   1px 1px darken(white, 68%),
+   1px 1px darken(white, 70%),
+   4px 8px 10px  rgba(black, 0.2),
+   4px 8px 10px  rgba(black, 0.2),
+   4px 9px 50px  rgba(blue, 0.5)
+    ; 
+  }
+
+  #home {
+      position: relative;
+  }
+
+  #backgroundNachOben {
+          
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 981px;
+    position: absolute;
+    animation-name: divNachOben;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes divNachOben {
+    0% {
+        position: absolute;
+        bottom: -100%;
+    }
+
+    100% {
+        position: absolute;
+        bottom: 100%;
+    }
+
+}
+
+.homeText-1 {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.801);
+    font-family: 'Rammetto One', cursive;  
+    font-size: 28px;
+    animation: satzSchwinden 7s;
+    animation-fill-mode: forwards;
+}
+
+.homeText {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.904);
+  font-family: 'Rammetto One', cursive;  
+  font-size: 25px;
+  text-align: justify;
+  animation: satzSchwinden2 10s;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes satzSchwinden {
+
+    0% {
+        opacity: 1;
+  
+    }
+    
+    75% {
+        opacity: 1;
+  
+    }
+  
+    100% {
+        opacity: 0;
+  
+    }
+  
+  }
+  
+  @keyframes satzSchwinden2 {
+  
+    0% {
+        opacity: 0;
+  
+    }
+    
+    30% {
+        opacity: 1;
+  
+    }
+  
+    75% {
+      opacity: 1;
+  
+  }
+  
+    100% {
+        opacity: 0;
+  
+    }
+  
+  }
