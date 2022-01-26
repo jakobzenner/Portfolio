@@ -12,10 +12,6 @@ window.onload = function () {
   setTimeout(satzHomeShow3, 28500)
   setTimeout(satzHomeHide3, 37900)
   setTimeout(satzHomeShow4, 38000)
-
-
-
-
   
 };
 
@@ -51,6 +47,11 @@ const anfangAnimationHide = () => {
    document.querySelector('.anfangAnimation').className = "hide";
 
 };
+ 
+const animationVerstecken = () => {
+    var element = document.getElementById("buttonSpringer");
+    element.classList.add("verstecken");
+ }
 
 const homeShow = () => {
     document.querySelector('#home').className = "show";
