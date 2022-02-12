@@ -782,7 +782,6 @@ a {
   font-size: 20px;
   color: rgba(224, 175, 49, 0.753);
   font-family: 'Secular One', sans-serif;
-  opacity: 0.6;
   word-spacing: 2px;
   letter-spacing: 2px;
   width: 60%;
@@ -794,7 +793,6 @@ a {
   font-size: 20px;
   color: rgba(224, 175, 49, 0.753);
   font-family: 'Secular One', sans-serif;
-  opacity: 0.6;
   word-spacing: 2px;
   letter-spacing: 2px;
   width: 60%;
@@ -843,7 +841,6 @@ a {
   box-sizing: border-box;
   height: 350px;
   width: 500px;
-  opacity: 0.3;
 
 
 }
@@ -853,7 +850,6 @@ a {
   text-align: justify;
   padding:5rem;
   background-color: rgba(255, 255, 255, 0.096) ;
-  opacity: 0.5;
 
 }
 
